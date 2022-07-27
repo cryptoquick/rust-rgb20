@@ -28,7 +28,10 @@ strict_encoding = "~0.8.0"
 stens = "0.7.1"
 lnpbp = "0.8.0"
 bp-seals = "0.8.0-rc.1"
-rgb-std = { version = "0.8.0-rc.2", features = ["wallet"] }
+rgb-std = { git = "https://github.com/cryptoquick/rgb-std.git", branch = "impl-node-id-conversion", package = "rgb-std", version = "0.8.0", features = [
+    "serde",
+    "wallet",
+] }
 bitcoin = "0.28.1"
 chrono = "0.4"
 url = "2.1"
